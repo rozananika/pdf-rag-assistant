@@ -1,0 +1,173 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family: system-ui;
+    background:linear-gradient(135deg,#fdf2f8,#eef2ff);
+}
+
+
+/* Layout */
+.app{
+    display:flex;
+    height:100vh;
+}
+
+/* Sidebar */
+.sidebar{
+    width:260px;
+    background:linear-gradient(180deg,#f3dce6,#ecd0dc);
+    padding:24px;
+    border-right:1px solid #ead5df;
+    user-select:none;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:700;
+    margin-bottom:30px;
+}
+
+/* My PDFs */
+.menu-title{
+    font-size:13px;
+    opacity:.7;
+    margin-bottom:12px;
+}
+
+.pdf-item{
+    padding:10px 12px;
+    border-radius:8px;
+    font-size:14px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.pdf-item:hover{
+    background:#e9b7c9;
+}
+
+/* Chat Area */
+.chat-area{
+    flex:1;
+    display:flex;
+    justify-content:center;   /* ⭐ ΚΕΝΤΡΑΡΕΙ */
+    align-items:center;       /* ⭐ vertical center */
+}
+
+/* Chat container */
+.chat-container{
+    width:100%;
+    max-width:900px;   /* ⭐ secret number */
+    height:90vh;
+
+    display:flex;
+    flex-direction:column;
+
+    background:white;
+    border-radius:18px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.08);
+}
+/* Header */
+.header{
+    padding:18px 22px;
+    font-weight:600;
+    background:#fff;
+    border-bottom:1px solid #ead5df;
+    user-select:none;
+}
+
+/* Chat */
+.chat-box{
+    flex:1;
+    padding:26px;
+    overflow-y:auto;
+}
+
+/* Messages */
+.message{
+    max-width:70%;
+    padding:14px 18px;
+    border-radius:14px;
+    margin-bottom:14px;
+    line-height:1.5;
+    font-size:15px;
+}
+
+.user{
+    background:#c084a1;
+    color:white;
+    margin-left:auto;
+}
+
+.bot{
+  background: white;
+    border-radius:16px;
+    padding:18px 22px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.06);
+
+    border:1px solid #eee;
+
+    line-height:1.7;
+}
+
+.bot ul{
+    padding-left:20px;
+}
+
+.bot li{
+    margin-bottom:8px;
+}
+
+.bot strong{
+    color:#7c3aed;   /* elegant purple */
+}
+
+/* Input */
+.input-area{
+    padding:18px;
+    border-top:1px solid #ead5df;
+    display:flex;
+    gap:10px;
+}
+
+input{
+    flex:1;
+    padding:14px 16px;
+    border-radius:12px;
+    border:1px solid #ead5df;
+    font-size:15px;
+}
+
+input:focus{
+    outline:none;
+    border-color:#c084a1;
+}
+
+/* Button */
+button{
+    background:#c084a1;
+    color:white;
+    border:none;
+    padding:14px 22px;
+    border-radius:12px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.2s;
+}
+
+button:hover{
+    background:#a96a87;
+}
+
+/* PDF Viewer */
+#pdf-viewer{
+    width:50%;
+    height:100vh;
+    border:none;
+    background:#fff;
+    display:none;
+}
